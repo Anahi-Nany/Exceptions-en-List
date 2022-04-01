@@ -43,9 +43,15 @@ public class  Main {
         testingList(team1, team2, team3);
 
          */
+
+        System.out.println("El programa no ha fallado");
     }
 
     public static void generic(List<String> team1, List<String> team2, List<String> team3)throws NotValidIndexException, NotNullValuesAllowedException{
+        //team1.remove(5);//causante de problemas, y derivados
+        //     caso NotValidIndexException
+        team1.addAtFront(null);//stabiliza
+        //caso  NotNullValuesAllowedException
         team1.addAtTail("Anahi");
         team1.addAtTail("Rebeca");
         team1.addAtTail("Imelda");

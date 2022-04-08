@@ -200,7 +200,6 @@ public class LinkedListTest {
         /*//When:
         //Then:
         Assertions.assertThrows(NotValidIndexException.class, ()->list.remove(3));
-
         //When:
         try{
             list.remove(3);
